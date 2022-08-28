@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+* {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+body {
+    max-width: 1440px;
+    background-image: url("/src/img/bg-desktop.svg");
+    background-color: var(--violet);
+    background-size: cover;
+}
+
+
+h1 {
+    width: 500px;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
+#logo {   
+    padding-bottom: 12vh;
+    padding-top: 7vh;
+}
+
+#section-img-principal {
+    padding-right: 4vw;
+    float: left;
+    display: block;
+}
+
+#Textos {
+    padding-top: 4vh;
+    padding-left: 45vw;
+}
+
+#Description {
+    width: 660px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#btn {
+    font-size: 15px;
+    color: var(--violet);
+    background-color:white;
+    border: none;
+    cursor: pointer;
+    height: 47px;
+    width: 170px;
+    border-radius: 40px;
+}
+
+
+#icons{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 2vh;
+    padding-top: 20vh;
+}
+
+@media (max-width:412px) {
+    body{
+        background-image: url("/src/img/bg-mobile.svg");
+        background-color: var(--violet);
+        background-size: cover;
+    }
+
+#img-principal{
+    width: 100%;
+}
+
+
+}
